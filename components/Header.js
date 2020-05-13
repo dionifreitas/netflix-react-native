@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components/native'
+import { SafeAreaView } from 'react-native'
 
 const Container = styled.View`
 	align-items: center;
@@ -23,12 +24,14 @@ const Menu = styled.Text`
 
 const Header = () => {
 	return (
-		<Container>
-			<Logo resizeMode='contain' source={require('../assets/logo.png')} />
-			<Menu>Séries</Menu>
-			<Menu>Filmes</Menu>
-			<Menu>Minha lista</Menu>
-		</Container>
+		<SafeAreaView>
+			<Container>
+				<Logo resizeMode='contain' source={require('../assets/logo.png')} />
+				<Menu>Séries</Menu>
+				<Menu>Filmes</Menu>
+				<Menu>Minha lista</Menu>
+			</Container>
+		</SafeAreaView>
 	)
 }
 
