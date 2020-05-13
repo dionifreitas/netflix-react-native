@@ -36,7 +36,7 @@ const Movies = ({ label, item, onSelect }) => {
 	const getProps = item => useSpring({
 		duration: 1000,
 		to: {
-			width: pressing.item == item ? 110 : 100,
+			width: pressing.item == item ? 115 : 100,
 		}
 	});
 	return (
